@@ -12,3 +12,5 @@ meteor
 ```
 
 *You need to create an account and log in to be able to post.*
+
+You can change the bootstrap theme. See client/html/layout/main.html
