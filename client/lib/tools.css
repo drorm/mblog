@@ -1,0 +1,20 @@
+#currentMessage {
+	position:absolute;
+	left: 45%;
+	top:50px;
+	z-index:10;
+}
+
+
+.devwikDialog {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	font-size:30px;
+	min-height: 10em;
+	vertical-align: middle;
+	border: 5px;
+	text-align: center;
+	line-height: 150px;
+	text-shadow: 0px 2px 3px #0e0e8f;
+}

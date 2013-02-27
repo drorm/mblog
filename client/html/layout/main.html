@@ -1,0 +1,46 @@
+<head>
+	<meta charset="utf-8">
+		<title>blog</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<style type="text/css">
+				body {
+					padding-top: 60px;
+					padding-bottom: 40px;
+				}
+			</style>
+
+			<link rel="stylesheet" type="text/css" href="/themes/spacelab.css"></link>
+			<!--
+			<link rel="stylesheet" type="text/css" href="/themes/united.css"></link>
+			<link rel="stylesheet" type="text/css" href="/themes/superhero.css"></link>
+			<link rel="stylesheet" type="text/css" href="/themes/cyborg.css"></link>
+			<link rel="stylesheet" type="text/css" href="/themes/spruce.css"></link>
+				-->
+			<script type="text/javascript" src="/tinymce/jscripts/tiny_mce/jquery.tinymce.js"></script>
+
+			<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+
+</head>
+
+<body>
+	{{> site}} 
+</body>
+
+<template name="site">
+	{{!This is the main template for the site. It includes tha appropriate parts of all the other templates}}
+	{{> devwikHeader}} 
+
+		{{renderPage}}
+		<hr/>
+		{{> devwikFooter}} 
+</template>
+
+
+<template name="initialTemplate">
+	<h1> lkjadf;ljasdf</h1>
+	{{!The home page}}
+	{{> devwikHome}} 
+</template>

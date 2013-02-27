@@ -1,0 +1,20 @@
+body { 
+	padding-top: 65px; 
+	background: url(/images/extra_clean_paper.png) repeat 0 0;
+}
+
+.post {
+	background:white;
+	padding-left:35px;
+}
+
+.tagCloud {
+	cursor: pointer;
+}
+
+/* just use rounded corners across the board */
+div, .pill-content, .builderInput, #devwikPreviewForm, #devwikGenerated {
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+}
+

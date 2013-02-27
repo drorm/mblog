@@ -1,0 +1,52 @@
+<template name="devwikHome">
+	<div class="container">
+			<h2>Sample blog</h2>
+			<div class='row'>
+				<div class="span10">
+					{{#each posts}}
+					{{> post}}
+					{{/each}}
+				</div>
+				<div id='tagCloud' class="span2">
+					<h3> Tags </h3>
+					{{#each tags}}
+					{{> tag}}
+					{{/each}}
+				</div>
+			</div>
+		</div>
+
+	</template>
+
+
+	<template name="post">
+		<div class='post'> 
+		<div class='row'> 
+			<div class="span7">
+				<h3> {{title}} </h3>
+			</div>
+		</div>
+		<div class='row'> 
+			<div class="span7">
+				<h4>
+				By {{author}}
+			</h4>
+			</div>
+			<div class="span2 muted">
+				{{postDate}}
+			</div>
+		</div>
+		<div class='row'> 
+			{{{content}}}
+		</div>
+		<hr/>
+	</div>
+
+	</template>
+
+	<template name="tag">
+		<span style='font-size:1em' class="label label-info tagCloud" 
+				onclick='filterTags("{{name}}")'>
+				{{name}}
+		</span>
+	</template>

@@ -1,0 +1,52 @@
+<template name="devwikList">
+
+	<div class='row-fluid'> 
+		<div class="offset5 span2">
+			<form>
+				<label class="checkbox">
+				<h4> Show Trashed 
+					<input type="checkbox" name="showTrashed" id='showTrashed' >
+				</h4> 
+			</label>
+			</form>
+			</div>
+		</div>
+		<div class='row-fluid'> 
+			<div class="offset1 span6">
+				<h4> Title </h4>
+			</div>
+			<div class="span1">
+				<h4> Author </h4>
+			</div>
+			<div class="span1">
+				<h4> Status </h4>
+			</div>
+			<div class="span1">
+				<h4> Date </h4>
+			</div>
+		</div>
+		{{#each posts}}
+		{{> postAdmin}}
+		{{/each}}
+
+	</template>
+
+	<template name="postAdmin">
+		<div class='row-fluid'> 
+			<div class="offset1 span6">
+				<h4> 
+					<a href='/new?id={{_id}}'> {{title}}</a>
+				</h4>
+			</div>
+			<div class="span1">
+				{{author}}
+			</div>
+			<div class="span1">
+				{{status}}
+			</div>
+			<div class="span2">
+				{{updated}}
+			</div>
+		</div>
+		<hr/>
+	</template>
